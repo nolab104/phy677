@@ -1,3 +1,4 @@
+# Demonstration of sampling and fft's
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy.fft import fft, fftshift, ifft, ifftshift
