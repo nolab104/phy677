@@ -31,7 +31,7 @@ E0 = np.double(np.abs(x) < 8) * np.double(np.abs(y) < 4)
 F0 = fft2(E0)
 
 # apply pupil as a kappa_perp limit
-P = np.double(kx**2.0 + ky**2.0 < (NA / lambda0) ** 2.0)
+P = np.double(kx**2.0 + ky**2.0 < (0.01 / lambda0) ** 2.0)
 # the Fourier plane field
 E1 = F0 * fftshift(P)
 # angular spectrum beyond the Fourier plane
